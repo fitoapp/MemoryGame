@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/timer_bar"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_16"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:layout_marginRight="@dimen/margin_8"
+        android:progress="100"
+        android:max="100"/>
+
+    <TextView
+        android:id="@+id/level_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/timer_bar"
+        app:layout_constraintTop_toBottomOf="@id/timer_bar"
+        android:layout_marginTop="@dimen/margin_16"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_20"
+        tools:text="Level: 1"/>
+    
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@id/timer_bar"
+        app:layout_constraintTop_toBottomOf="@id/timer_bar"
+        android:layout_marginTop="@dimen/margin_16"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_20"
+        tools:text="Score: 0"/>
+
+    <GridView
+        android:id="@+id/game_grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/level_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/margin_16"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="@dimen/margin_8"
+        android:verticalSpacing="@dimen/margin_8"/>
+</android.support.constraint.ConstraintLayout>

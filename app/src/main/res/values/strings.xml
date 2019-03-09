@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MemoryGame</string>
+    <string name="level_placeholder">Level: %s</string>
+    <string name="score_placeholder">Score: %d</string>
+    <string name="error_title">Sorry!</string>
+    <string name="error_message">We were unable to fetch your status. We\'ll have to start the game from beginning.</string>
+    <string name="ok">OKAY</string>
+    <string name="success">Success!!</string>
+    <string name="hurray_message">You have successfully solved this game</string>
+    <string name="failure">Failure</string>
+    <string name="failure_message">You were not able to solve this game at stipulated time. Let\'s restart</string>
+</resources>
